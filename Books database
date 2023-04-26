@@ -1,0 +1,20 @@
+-- Create a book database
+
+CREATE TABLE books
+ (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, autor TEXT, year INTEGER, type TEXT);
+
+INSERT INTO TABLE books VALUES 
+(“A ciranda das mulheres sabias”, “Clarissa Pinkola Estes”, 2007, “Fiction”),
+(“Mulheres que correr com os lobos”, “Clarissa Pinkola Estes”, 2005, “Fiction”),
+(“O Diario de um mago”, “Paulo Coelho”, 1987, “Fiction”),
+(“Tudo é Rio”, “Carla Madeira”, 2014, “Fiction”),
+(“A natureza da mordida”, “Carla Madeira”, 2018, “Fiction”),
+(“Como se tornar sobrenatural”, “Dr. Joe Dispenza”, 2017, “Self help”),
+(“The Shift”, “Dr. Wayne W. Dyer”, 2010, “Self help”),
+(“Extremely loud and incredibly close”, “Jonathan Safran Foer”, 2005, “Novel”),
+(“Awakening Joy”, “James Baraz”, 2012, “Self help”);
+(“Onze minutos”, “Paulo Coelho”, 2005, “Fiction”);
+
+-- Display the database ordered by year
+
+SELECT * FROM book ORDER BY year desc;
